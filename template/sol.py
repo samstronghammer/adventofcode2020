@@ -5,4 +5,6 @@ sys.path.append(f"{os.path.dirname(__file__)}/..")
 import util
 import math
 
-fn = "./in.txt"
+fn = f"{os.path.dirname(__file__)}/in.txt"
+
+
