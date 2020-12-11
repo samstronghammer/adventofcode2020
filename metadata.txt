@@ -1,1 +1,11 @@
-Day 1: list of numbers, finding tuples that sum to 2020
+Day 1: List of numbers, finding tuples that sum to 2020
+Day 2: List of passwords, finding valid passwords
+Day 3: Grid of trees on a slope, with a toboggan going down at different angles
+Day 4: List of passports, determining which are valid
+Day 5: List of plane locations which are recorded in binary
+Day 6: List of groups answers to questions, which are then used to take unions and intersections of sets
+Day 7: List of bags and which bags they contain, solved by iterating on solutions or recurring on the number of bags inside
+Day 8: First computer simulation problem, with commands "nop" "acc" and "jmp"
+Day 9: List of integers, solved using iteration and precise slicing
+Day 10: List of integers, part 1 is counting the difference between the sorted values and part 2 uses memoization to calculate the number of valid orderings
+Day 11: Grid of seats, solved by running a Game of Life-like simulation
