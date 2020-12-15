@@ -4,8 +4,6 @@ import os
 sys.path.append(f"{os.path.dirname(__file__)}/..")
 import util
 import math
-import parse
-from parse import compile
 
 # Cool problem today, definitely a brain teaser. Coming up with these 20-odd lines of code
 # took me a bit, but I'm satisfied with how concise it is. The trick is to realize that remembering
