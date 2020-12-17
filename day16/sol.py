@@ -48,7 +48,6 @@ print("Part 1 Solution:")
 print(sum(map(lambda x: ticket_invalid_sum(x, fields), tickets)))
 
 tickets = list(filter(lambda x: ticket_invalid_sum(x, fields) == 0, tickets))
-tickets.append(myticket)
 
 # opts represents all remaining field possibilities for each location on the ticket
 opts = [set(fields.keys()) for field in fields]

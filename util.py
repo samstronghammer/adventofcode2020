@@ -70,6 +70,20 @@ def adj4(loc):
 def adj8(loc):
   return [(loc[0] - 1, loc[1] - 1), (loc[0], loc[1] - 1), (loc[0] + 1, loc[1] - 1), (loc[0] - 1, loc[1]), (loc[0] + 1, loc[1]), (loc[0] - 1, loc[1] + 1), (loc[0], loc[1] + 1), (loc[0] + 1, loc[1] + 1)]
 
+def adj_all(loc):
+  if len(loc) == 1:
+    return set([(loc[0] - 1,), (loc[0] + 1,)])
+  else:
+    adj = set()
+    adj_lower = adj_all(loc[1:])
+    a, b, c = (loc[0] - 1,), (loc[0],), (loc[0] + 1,)
+    adj.update(map(lambda x: a + x, adj_lower))
+    adj.update(map(lambda x: b + x, adj_lower))
+    adj.update(map(lambda x: c + x, adj_lower))
+    adj.add(a + loc[1:])
+    adj.add(c + loc[1:])
+    return adj
+
 def nthsmallestval(l, n):
   return sorted(list(set(l)))[n]
 
