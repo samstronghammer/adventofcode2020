@@ -39,8 +39,7 @@ print(len(locs))
 
 for _ in range(100):
     # adj_count contains a map from every location that matters (locations in locs or locations 
-    # adjacent to locs) to how many neighbors
-    # it has that are flipped
+    # adjacent to locs) to how many neighbors it has that are flipped
     adj_count = {}
     for loc in locs:
         # If this location is not already in adj_count, add it.
